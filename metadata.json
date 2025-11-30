@@ -1,0 +1,5 @@
+{
+  "name": "AutoCV Agent",
+  "description": "An AI-powered application that analyzes Job Description screenshots to generate tailored Resumes, Cover Letters, and Email drafts using Gemini 3.0 Pro.",
+  "requestFramePermissions": []
+}
