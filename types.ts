@@ -47,3 +47,9 @@ export type ProcessingStep =
   | 'calculating_metrics' 
   | 'complete' 
   | 'error';
+
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+  timestamp: Date;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProfileForm from './components/ProfileForm';
 import JobUploader from './components/JobUploader';
 import Dashboard from './components/Dashboard';
+import Chatbot from './components/Chatbot';
 
 enum View {
   DASHBOARD,
@@ -65,6 +66,9 @@ const App: React.FC = () => {
         {currentView === View.UPLOAD && <JobUploader onComplete={() => setCurrentView(View.DASHBOARD)} />}
         {currentView === View.PROFILE && <ProfileForm />}
       </main>
+
+      {/* Chatbot Overlay */}
+      <Chatbot />
     </div>
   );
 };
